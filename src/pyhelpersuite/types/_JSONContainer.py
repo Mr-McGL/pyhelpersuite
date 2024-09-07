@@ -139,7 +139,7 @@ class JSON:
             JSONContainer: A new JSONContainer object containing the data from the string.
         """
         data = json.loads(json_str, **kwargs)
-        return JSONContainer(data)
+        return JSON(data)
 
     @staticmethod
     def from_file(file_path, **kwargs):
@@ -157,7 +157,7 @@ class JSON:
         """
         with open(file_path, 'r') as f:
             data = json.load(f, **kwargs)
-        return JSONContainer(data)
+        return JSON(data)
 
     def __repr__(self):
         """
