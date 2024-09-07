@@ -1,6 +1,7 @@
 import json
 
-class JSONContainer:
+#class JSONContainer:
+class JSON:
     """
     A container class for handling any data from a JSON format.
 
