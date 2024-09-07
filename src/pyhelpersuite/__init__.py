@@ -1,3 +1,6 @@
+from . import fprnt
+
+
 # # -*- coding: utf-8 -*-
 # # File *__init__.py* of package *nbutis*. This file contains:
 # 
