@@ -124,7 +124,7 @@ class JSONContainer:
         return type(self._data)
 
     @staticmethod
-    def from_string(json_string, **kwargs):
+    def from_str(json_str, **kwargs):
         """
         Create a JSONContainer object from a JSON string.
 
@@ -137,7 +137,7 @@ class JSONContainer:
         Returns:
             JSONContainer: A new JSONContainer object containing the data from the string.
         """
-        data = json.loads(json_string, **kwargs)
+        data = json.loads(json_str, **kwargs)
         return JSONContainer(data)
 
     @staticmethod
