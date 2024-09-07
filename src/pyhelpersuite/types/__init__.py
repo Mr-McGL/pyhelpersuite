@@ -17,3 +17,4 @@ from ._types import LockFunc, Struct, ConstStruct, FixStruct, ListStruct
 from ._functions import remove_copies, find_dict
 #from ..decorators._decorators import static_vars
 from ._check  import is_seq, is_seq_of_seq, is_seq_of_seq_or_bt
+from ._JSONContainer import JSONContainer, JSONContainer as JSON

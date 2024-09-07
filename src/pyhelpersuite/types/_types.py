@@ -24,8 +24,6 @@ class LockFunc():
   def acquire(self): self.__lock.acquire()
   def release(self): self.__lock.release()
 
-
-
 class Struct(dict): 
   def __getattr__(self, name): return self.get(name) # self[name] ToDo: Can be done better. This option removes errors
   def __setattr__(self, name, value): self[name] = value
@@ -54,4 +52,3 @@ class ListStruct(FixStruct):
 
   def getList(self):
     return list(self.values())
-
